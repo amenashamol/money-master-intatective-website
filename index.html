@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+      <!-- header section  -->
+    <header  >
+        <div class=" container bg-light container  my-2 text-center " style="height: 40px">
+            <h3 class="fw-normal text-info"> Money Calculation</h3>
+        </div>
+       
+    </header>
+    
+      <!-- main section  -->
+    <main>
+        <div class="container">
+            <div class="row ">
+    
+                 <!-- image section  -->
+                 <div class="col-6 ">
+                    <div class=" card mt-2 mx-auto  ">
+                        <div>
+                            <img class="img-fluid" src="img/1.jpg" alt="">
+                        </div>
+                    </div>
+
+                 </div>
+               
+    
+                <!-- input section  -->
+    
+               <div class="col  ml-4 ">
+                    <div class=" card mt-2 mx-auto  bg-light">
+                      <p class="mt-2 color-1 p-1 text-center fw-bold" >Income</p>
+
+                    
+    
+                       <div class="mt-2 mx-auto ">
+
+                         <!-- income input  -->
+
+                            <div class="input-group input-group-sm mb-2">
+                                <span class="input-group-text" id="inputGroup-sizing-sm fw-bold">Income</span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" id="income-amount" />
+                            </div>
+
+                        <!-- expenses input   -->
+
+                            <p class=" color-1 p-1 text-center fw-bold">Expenses</p>
+                            <div class="input-group input-group-sm mb-2">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Food</span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" id="food-cost" />
+                            </div>
+
+                            <div class="input-group input-group-sm mb-2">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Rent</span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" id="rent-cost" />
+                            </div>
+
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Clothes</span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" id="cloth-cost" />
+                            </div>
+
+                            <button type="button"  class="btn btn-primary ml-4 mb-4" id="calculate-button" >Calculate </button>
+                            <p class=" color-1 p-1 text-center fw-2 mb-0">Total Expenses: <span id="total-expense">0</span>
+                            <p class=" color-1  text-center fw-bold ml-0" >Balance: <span id="after-balance">0</span></p>
+
+                            <!-- saving input %  -->
+
+                            <div class="input-group input-group-sm mb-3">
+                                <span >Save:  </span>
+                                <input type="text" class=" ml-2"style="width:80px ;" 
+                                    aria-describedby="inputGroup-sizing-sm" id="save-input" />
+                                    <span class="px-4" >  % </span>
+                                    <button type="button"  class="btn btn-primary" id="save-button" >save </button>
+                            </div>
+
+                              <!-- display remaining and saving amount   -->
+
+                            <p class=" color-1 p-1 text-center fs-1 mb-0">Saving Amount: <span id="saving-amount">0</span>
+                            <p class=" color-1  text-center fw-bold">Remaining Balance: <span id="remaing-balance">0</span><p>
+                            
+                         </div> 
+                       
+                       
+                   </div>
+               </div>
+            </div>
+            
+        </div>
+
+
+         
+    </main>
+   
+    <script src="app.js"></script>
+</body>
+</html>
