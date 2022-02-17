@@ -21,13 +21,13 @@
       <!-- main section  -->
     <main>
         <div class="container">
-            <div class="row ">
+            <div class="row row-cols-2 row-cols-sm-12  ">
     
                  <!-- image section  -->
-                 <div class="col-6 ">
+                 <div class=" col col-lg-6  col-sm-12 col-md-12">
                     <div class=" card mt-2 mx-auto  ">
                         <div>
-                            <img class="img-fluid" src="img/1.jpg" alt="">
+                            <img class="img-fluid" style=" height: 100%;"src="img/1.jpg" alt="">
                         </div>
                     </div>
 
@@ -36,7 +36,7 @@
     
                 <!-- input section  -->
     
-               <div class="col  ml-4 ">
+               <div class="col col-lg-6  col-sm-12 col-md-12 ">
                     <div class=" card mt-2 mx-auto  bg-light">
                       <p class="mt-2 color-1 p-1 text-center fw-bold" >Income</p>
 
@@ -93,6 +93,10 @@
                             <p class=" color-1  text-center fw-bold">Remaining Balance: <span id="remaing-balance">0</span><p>
                             
                          </div> 
+
+                         <p id="input-value"  style=" display: none;" >❌  Input value is negative or emty</p>
+                         <p id="less-than" style=" display: none;">❌ Income amount is  less than total Expense amount</p>
+                         <p id="more-than" style=" display: none;">❌ Saving amount is  more than balance amount</p>
                        
                        
                    </div>
